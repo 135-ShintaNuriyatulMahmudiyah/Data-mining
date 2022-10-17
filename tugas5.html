@@ -52,7 +52,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="PENAMBANGAN DATA - UTS" href="Penambangan%20Data%20-%20UTS.html" />
     <link rel="prev" title="Tugas 4 (NAIVE BAYES CLASSIFIER)" href="tugas4.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -142,11 +141,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Tugas 5 (K-Mean Clustering)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Penambangan%20Data%20-%20UTS.html">
-   PENAMBANGAN DATA - UTS
   </a>
  </li>
 </ul>
@@ -333,66 +327,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Tugas 5 (K-Mean Clustering)
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#import-dataset">
-   IMPORT DATASET
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#declare-feature-vector-and-target-variable">
-   Declare feature vector and target variable
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#feature-scaling">
-   Feature Scaling
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#k-means-model-with-three-clusters">
-   K-Means model with three clusters
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#k-means-model-parameters-study">
-   K-Means model parameters study
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#check-quality-of-weak-classification-by-the-model">
-   Check quality of weak classification by the model
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -404,49 +344,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Tugas 5 (K-Mean Clustering)
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#import-dataset">
-   IMPORT DATASET
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#declare-feature-vector-and-target-variable">
-   Declare feature vector and target variable
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#feature-scaling">
-   Feature Scaling
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#k-means-model-with-three-clusters">
-   K-Means model with three clusters
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#k-means-model-parameters-study">
-   K-Means model parameters study
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#check-quality-of-weak-classification-by-the-model">
-   Check quality of weak classification by the model
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -468,9 +365,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="import-dataset">
-<h1>IMPORT DATASET<a class="headerlink" href="#import-dataset" title="Permalink to this headline">#</a></h1>
+<p>IMPORT DATASET</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv&quot;</span><span class="p">)</span>
@@ -487,7 +382,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c3de479e-ad06-49d9-a104-f994dd26d92b">
+  <div id="df-67cf1652-747d-4c30-84f5-52745da13170">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -558,7 +453,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c3de479e-ad06-49d9-a104-f994dd26d92b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-67cf1652-747d-4c30-84f5-52745da13170')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -609,12 +504,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c3de479e-ad06-49d9-a104-f994dd26d92b button.colab-df-convert');
+          document.querySelector('#df-67cf1652-747d-4c30-84f5-52745da13170 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c3de479e-ad06-49d9-a104-f994dd26d92b');
+          const element = document.querySelector('#df-67cf1652-747d-4c30-84f5-52745da13170');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -635,9 +530,7 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="declare-feature-vector-and-target-variable">
-<h1>Declare feature vector and target variable<a class="headerlink" href="#declare-feature-vector-and-target-variable" title="Permalink to this headline">#</a></h1>
+<p>Declare feature vector and target variable</p>
 <p>Convert categorical variable into integers</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -675,7 +568,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-79122deb-04aa-407c-9f95-b44ec1602dbe">
+  <div id="df-6fe9bde3-0c80-4ee8-8147-b0271e8357e6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -746,7 +639,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-79122deb-04aa-407c-9f95-b44ec1602dbe')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6fe9bde3-0c80-4ee8-8147-b0271e8357e6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -797,12 +690,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-79122deb-04aa-407c-9f95-b44ec1602dbe button.colab-df-convert');
+          document.querySelector('#df-6fe9bde3-0c80-4ee8-8147-b0271e8357e6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-79122deb-04aa-407c-9f95-b44ec1602dbe');
+          const element = document.querySelector('#df-6fe9bde3-0c80-4ee8-8147-b0271e8357e6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -823,9 +716,7 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="feature-scaling">
-<h1>Feature Scaling<a class="headerlink" href="#feature-scaling" title="Permalink to this headline">#</a></h1>
+<p>Feature Scaling</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cols</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span>
@@ -859,7 +750,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-62bb807a-e04f-4f5e-a834-55abf38b4434">
+  <div id="df-34f20998-8e9b-4b41-8d8c-6a9c19f95dca">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -979,7 +870,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-62bb807a-e04f-4f5e-a834-55abf38b4434')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-34f20998-8e9b-4b41-8d8c-6a9c19f95dca')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1030,12 +921,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-62bb807a-e04f-4f5e-a834-55abf38b4434 button.colab-df-convert');
+          document.querySelector('#df-34f20998-8e9b-4b41-8d8c-6a9c19f95dca button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-62bb807a-e04f-4f5e-a834-55abf38b4434');
+          const element = document.querySelector('#df-34f20998-8e9b-4b41-8d8c-6a9c19f95dca');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1056,9 +947,7 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="k-means-model-with-three-clusters">
-<h1>K-Means model with three clusters<a class="headerlink" href="#k-means-model-with-three-clusters" title="Permalink to this headline">#</a></h1>
+<p>K-Means model with three clusters</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
@@ -1082,9 +971,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="k-means-model-parameters-study">
-<h1>K-Means model parameters study<a class="headerlink" href="#k-means-model-parameters-study" title="Permalink to this headline">#</a></h1>
+<p>K-Means model parameters study</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span>
@@ -1111,9 +998,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="check-quality-of-weak-classification-by-the-model">
-<h1>Check quality of weak classification by the model<a class="headerlink" href="#check-quality-of-weak-classification-by-the-model" title="Permalink to this headline">#</a></h1>
+<p>Check quality of weak classification by the model</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kmeans</span><span class="o">.</span><span class="n">labels_</span>
@@ -1171,7 +1056,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-09a59f33-c147-4ac7-b637-90b2a879b197">
+  <div id="df-3ff3d1f4-d568-4660-84a7-aa3d3c827bdf">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1303,7 +1188,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-09a59f33-c147-4ac7-b637-90b2a879b197')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3ff3d1f4-d568-4660-84a7-aa3d3c827bdf')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1354,12 +1239,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-09a59f33-c147-4ac7-b637-90b2a879b197 button.colab-df-convert');
+          document.querySelector('#df-3ff3d1f4-d568-4660-84a7-aa3d3c827bdf button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-09a59f33-c147-4ac7-b637-90b2a879b197');
+          const element = document.querySelector('#df-3ff3d1f4-d568-4660-84a7-aa3d3c827bdf');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1415,13 +1300,6 @@ title="Print to PDF"
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Tugas 4 (NAIVE BAYES CLASSIFIER)</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="Penambangan%20Data%20-%20UTS.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">PENAMBANGAN DATA - UTS</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
